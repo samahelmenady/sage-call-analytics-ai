@@ -1,0 +1,278 @@
+:root {
+  --bg: #FAF8F4;
+  --sf: #F1EBE0;
+  --sf-alt: #FFFFFF;
+  --bd: #D9CFBF;
+  --tx: #1A1816;
+  --mu: #5E5649;
+  --be: #E8DCC6;
+
+  --success: #2F5D46;
+  --warning: #8B6914;
+  --danger: #A4452B;
+  --info: #1A5276;
+
+  --score-high: #2F5D46;
+  --score-medium: #8B6914;
+  --score-low: #A4452B;
+
+  --priority-critical: #A4452B;
+  --priority-high: #D68910;
+  --priority-medium: #2471A3;
+  --priority-low: #2F5D46;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Cairo', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--tx);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+html[lang="ar"] body {
+  font-family: 'Cairo', 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 70px;
+  padding: 12px 40px;
+  border-bottom: 1px solid var(--bd);
+  background: var(--sf-alt);
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--be);
+  color: var(--tx);
+}
+
+.nav-links {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  padding: 11px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--mu);
+  border: 1px solid transparent;
+  transition: all 0.15s;
+}
+
+.nav-links a:hover {
+  color: var(--tx);
+  background: var(--sf);
+}
+
+.nav-links a.active {
+  background: var(--tx);
+  color: var(--bg);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 40px;
+  flex: 1;
+}
+
+.card {
+  background: var(--sf-alt);
+  border: 1px solid var(--bd);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.card-muted {
+  background: var(--sf);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 22px;
+  border-radius: 999px;
+  font: 700 14px inherit;
+  cursor: pointer;
+  border: 0;
+  background: var(--tx);
+  color: var(--bg);
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--tx);
+  border: 1.5px solid var(--bd);
+}
+
+.btn-sm {
+  min-height: 36px;
+  padding: 0 14px;
+  font-size: 13px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #fff;
+  background: var(--mu);
+}
+
+.chip.positive,
+.chip.low {
+  background: var(--success);
+}
+
+.chip.neutral,
+.chip.medium {
+  background: var(--info);
+}
+
+.chip.mixed,
+.chip.high {
+  background: var(--priority-high);
+}
+
+.chip.negative,
+.chip.critical {
+  background: var(--danger);
+}
+
+.score-bar-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.score-bar-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.score-bar-track {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--be);
+  overflow: hidden;
+}
+
+.score-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+.footer {
+  padding: 20px 40px;
+  border-top: 1px solid var(--bd);
+  font-size: 13px;
+  color: var(--mu);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+
+  .nav,
+  .container,
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media print {
+
+  .nav,
+  .footer,
+  #dashUploadSection>*:not(#inlineResult),
+  #dashKpiSection,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .card {
+    break-inside: avoid;
+    border-color: #ccc;
+  }
+}

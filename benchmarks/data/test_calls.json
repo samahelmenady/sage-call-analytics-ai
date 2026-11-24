@@ -1,0 +1,35 @@
+[
+  {
+    "call_id": "bench-001",
+    "language": "ar",
+    "transcript": "العميل: السلام عليكم، تم خصم مبلغ الطلب مرتين من بطاقتي البنكية. الموظف: وعليكم السلام، أعتذر لك بشدة على هذا الخطأ. سأتحقق من رقم الطلب حالاً وأقوم برفع طلب استرداد فوري للمبلغ الزائد خلال ٤٨ ساعة. العميل: شكرًا لتعاونك.",
+    "ground_truth": {
+      "sentiment": "negative",
+      "category": "billing",
+      "priority": "high",
+      "resolved": true
+    }
+  },
+  {
+    "call_id": "bench-002",
+    "language": "en",
+    "transcript": "Customer: Hi, my package was supposed to arrive three days ago and the tracking hasn't updated. Agent: I completely understand how frustrating that is. Let me check with the carrier right now. I see it was delayed at the regional hub and is scheduled for delivery tomorrow morning. Customer: Okay, thank you for checking.",
+    "ground_truth": {
+      "sentiment": "negative",
+      "category": "shipping",
+      "priority": "medium",
+      "resolved": true
+    }
+  },
+  {
+    "call_id": "bench-003",
+    "language": "en",
+    "transcript": "Customer: I can't log into my account after resetting my password, it keeps saying invalid token. Agent: I'm sorry about that. Let me clear your session cache and send you a fresh verification link. Can you try it now? Customer: Yes, I'm in! Thanks so much, you were super helpful.",
+    "ground_truth": {
+      "sentiment": "positive",
+      "category": "account",
+      "priority": "medium",
+      "resolved": true
+    }
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "validation_loss": 1.3261754512786865,
+  "validation_accuracy": 0.8421948552131653,
+  "epochs_completed": 10,
+  "batch_size": 256,
+  "training_samples": 319582,
+  "validation_samples": 39948,
+  "input_features": 8000,
+  "num_classes": 3
+}

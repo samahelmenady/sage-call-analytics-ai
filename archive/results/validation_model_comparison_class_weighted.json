@@ -1,0 +1,12 @@
+{
+  "Baseline ANN":{
+    "validation_loss":1.3261754513,
+    "validation_accuracy":0.8421948533,
+    "validation_macro_f1":0.7684240284
+  },
+  "Class-weighted Regularized ANN":{
+    "validation_loss":0.4727806449,
+    "validation_accuracy":0.8421698208,
+    "validation_macro_f1":0.7815803763
+  }
+}

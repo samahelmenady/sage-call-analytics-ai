@@ -1,0 +1,43 @@
+# Sage v2.0 — Configurable Model & Rubric Architecture
+# Note: Environment variables in .env override the active provider and model defaults.
+
+stt:
+  active: cohere
+  providers:
+    cohere:
+      model: cohere-transcribe-arabic-07-2026
+      language: ar
+      max_file_size_mb: 25
+
+genai:
+  # "auto" selects Gemini when GEMINI_API_KEY is set, otherwise falls back to Cohere.
+  active: auto
+  providers:
+    gemini:
+      model: gemini-3.5-flash
+      temperature: 0.1
+      max_tokens: 4096
+      timeout_seconds: 45
+      json_mode: true
+      retry_attempts: 1
+    cohere:
+      model: command-r-plus-08-2024
+      temperature: 0.1
+      max_tokens: 4096
+      timeout_seconds: 60
+      json_mode: true
+      retry_attempts: 2
+
+evaluation_rubric:
+  empathy:
+    weight: 0.25
+    description: "Agent acknowledges customer feelings and situation."
+  clarity:
+    weight: 0.25
+    description: "Explanations are clear, structured, and jargon-free."
+  resolution_effectiveness:
+    weight: 0.30
+    description: "Agent offers a concrete, appropriate solution."
+  professionalism:
+    weight: 0.20
+    description: "Professional tone, composure, and language throughout."

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sage — Customer Support Intelligence Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&family=Inter:wght@400;600;700;800&display=swap" />
+  <link rel="stylesheet" href="styles/main.css?v=2.4" />
+  <link rel="stylesheet" href="styles/dashboard.css?v=2.4" />
+  <link rel="stylesheet" href="styles/report.css?v=2.4" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#workspace" data-view="workspace">
+      sage <span class="logo-badge">v2.0 Intelligence</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#workspace" data-view="workspace" id="navWorkspace">Workspace & Dashboard</a>
+      <a href="#history" data-view="history" id="navHistory">Call History</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="langToggle" class="btn btn-secondary btn-sm" type="button">EN · ع</button>
+      <div id="healthBadge" class="health-pill" title="Active AI Engines">Checking engines...</div>
+    </div>
+  </header>
+
+  <main id="app" class="container"></main>
+
+  <footer class="footer">
+    <span id="footLeft">Sage Customer Support Intelligence Platform</span>
+    <span id="footRight">STT + Generative AI + Rule-Based Risk Engine</span>
+  </footer>
+
+  <script type="module" src="app.js?v=2.3"></script>
+</body>
+</html>

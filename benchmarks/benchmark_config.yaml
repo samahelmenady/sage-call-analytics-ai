@@ -1,0 +1,13 @@
+providers_to_compare:
+  - name: gemini_3_5_flash
+    genai_provider: gemini
+    model: gemini-3.5-flash
+  - name: cohere_command_r_plus
+    genai_provider: cohere
+    model: command-r-plus-08-2024
+  - name: cohere_command_r
+    genai_provider: cohere
+    model: command-r-08-2024
+
+runs_per_call: 1
+output_dir: results/benchmarks/

@@ -1,0 +1,28 @@
+{
+  "source_file": "E:\\ANN\\ANN_01\\data\\HARD-Arabic-Dataset-master\\data\\unbalanced-reviews.txt",
+  "raw_rows_loaded": 409562,
+  "malformed_rows_skipped": 0,
+  "rows_after_cleaning_and_deduplication": 399478,
+  "split_sizes": {
+    "train": 319582,
+    "validation": 39948,
+    "test": 39948
+  },
+  "class_mapping": {
+    "0": "negative",
+    "1": "neutral",
+    "2": "positive"
+  },
+  "class_counts": {
+    "positive": 267926,
+    "neutral": 79439,
+    "negative": 52113
+  },
+  "vectorizer": {
+    "type": "CountVectorizer",
+    "binary": true,
+    "max_features": 8000,
+    "vocabulary_size": 8000
+  },
+  "random_seed": 42
+}

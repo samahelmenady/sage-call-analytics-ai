@@ -1,0 +1,36 @@
+{
+  "selected_model": "weighted_regularized_ann",
+  "label_mapping": {
+    "0": "negative",
+    "1": "neutral",
+    "2": "positive"
+  },
+  "input_dim": 8000,
+  "selection_metric": "validation_macro_f1",
+  "validation_metrics": {
+    "accuracy": 0.7688102056756053,
+    "macro_f1": 0.610025288002299,
+    "macro_recall": 0.640858768292006,
+    "negative_f1": 0.7695834925487199,
+    "neutral_f1": 0.21052631578947367,
+    "positive_f1": 0.8499660556687033,
+    "best_epoch": 3.0
+  },
+  "class_weights": {
+    "0": 0.9283966282969274,
+    "1": 6.930311231393776,
+    "2": 0.5622461302009002
+  },
+  "seed": 42,
+  "tensorflow_version": "2.21.0",
+  "vectorizer_sha256": "bd6ba71a54ea4b4161b7342a3c657cae29e1b5842f37ec6c83b775953c3744ad",
+  "source_train_sha256": "64be5c84dd7801eca68cd7f1f88a9bb1e8a702f25e550dfe5620620e39345d98",
+  "source_validation_sha256": "b584a0826693a5f4d708efb333376a3add358e8f94360877fe6f4b0e5a262871",
+  "test_evaluated": false,
+  "limitations": [
+    "Noisy source labels",
+    "Neutral is rare",
+    "Talabat dominates the source",
+    "Written-review results do not establish real-call performance"
+  ]
+}

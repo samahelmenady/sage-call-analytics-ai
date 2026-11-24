@@ -1,0 +1,19 @@
+{
+  "selected_model": "Regularized ANN",
+  "selection_metric": "validation_macro_f1",
+  "validation_metrics": {
+    "validation_loss": 0.3968624174594879,
+    "validation_accuracy": 0.8665014518874536,
+    "validation_macro_f1": 0.7973794797364354
+  },
+  "baseline_validation_metrics": {
+    "validation_loss": 1.3261754512786865,
+    "validation_accuracy": 0.8421948533093021,
+    "validation_macro_f1": 0.7684240284440219
+  },
+  "regularized_validation_metrics": {
+    "validation_loss": 0.3968624174594879,
+    "validation_accuracy": 0.8665014518874536,
+    "validation_macro_f1": 0.7973794797364354
+  }
+}

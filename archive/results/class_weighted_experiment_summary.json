@@ -1,0 +1,27 @@
+{
+  "selected_model": "Class-weighted Regularized ANN",
+  "selection_metric": "validation_macro_f1",
+  "validation_metrics": {
+    "validation_loss": 0.47278064489364624,
+    "validation_accuracy": 0.8421698207669971,
+    "validation_macro_f1": 0.78158037627934
+  },
+  "baseline_validation_metrics": {
+    "validation_loss": 1.3261754512786865,
+    "validation_accuracy": 0.8421948533093021,
+    "validation_macro_f1": 0.7684240284440219
+  },
+  "class_weighted_validation_metrics": {
+    "validation_loss": 0.47278064489364624,
+    "validation_accuracy": 0.8421698207669971,
+    "validation_macro_f1": 0.78158037627934
+  },
+  "class_weights": {
+    "Negative": 2.5552250739585833,
+    "Neutral": 1.6762495213817774,
+    "Positive": 0.4969993297284856
+  },
+  "class_weighted_model_path": "E:\\ANN\\ANN_01\\models\\regularized_ann_class_weighted.keras",
+  "selected_experiment_model_path": "E:\\ANN\\ANN_01\\models\\selected_experiment_ann.keras",
+  "existing_backend_model_overwritten": false
+}

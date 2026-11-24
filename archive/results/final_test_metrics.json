@@ -1,0 +1,63 @@
+{
+  "selected_model": "Class-weighted Regularized ANN",
+  "test_loss": 0.4733581840991974,
+  "test_accuracy": 0.843721866607666,
+  "test_macro_f1": 0.7838172097626167,
+  "test_weighted_f1": 0.8473021450496891,
+  "test_samples": 39948,
+  "class_names": [
+    "Negative",
+    "Neutral",
+    "Positive"
+  ],
+  "confusion_matrix": [
+    [
+      4337,
+      602,
+      273
+    ],
+    [
+      1170,
+      5597,
+      1177
+    ],
+    [
+      786,
+      2235,
+      23771
+    ]
+  ],
+  "classification_report": {
+    "Negative": {
+      "precision": 0.6891784522485301,
+      "recall": 0.8321181887950883,
+      "f1-score": 0.7539330725771404,
+      "support": 5212.0
+    },
+    "Neutral": {
+      "precision": 0.6636234289779465,
+      "recall": 0.7045568982880162,
+      "f1-score": 0.6834778361216266,
+      "support": 7944.0
+    },
+    "Positive": {
+      "precision": 0.942508227270925,
+      "recall": 0.887242460435951,
+      "f1-score": 0.9140407205890835,
+      "support": 26792.0
+    },
+    "accuracy": 0.8437218383899069,
+    "macro avg": {
+      "precision": 0.7651033694991338,
+      "recall": 0.8079725158396851,
+      "f1-score": 0.7838172097626167,
+      "support": 39948.0
+    },
+    "weighted avg": {
+      "precision": 0.8539977730540396,
+      "recall": 0.8437218383899069,
+      "f1-score": 0.8473021450496891,
+      "support": 39948.0
+    }
+  }
+}
